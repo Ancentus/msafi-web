@@ -12,6 +12,8 @@
                         </p>
 
                         <p class="text-center no-data-found" v-else >
+                            {{ user_lat }}
+                            {{ user_lng }}
                             {{ $t('messages.no_data_in_zone') }}
                         </p>
                     </div>
