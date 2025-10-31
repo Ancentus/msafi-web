@@ -11,11 +11,9 @@
                             {{ $t('messages.nodata') }}
                         </p>
 
-                        <p class="text-center no-data-found" v-else >
-                            {{ user_lat }}
-                            {{ user_lng }}
-                            {{ $t('messages.no_data_in_zone') }}
-                        </p>
+                        <p class="text-center no-data-found" **v-else** >
+                            **{{ $t('messages.no_data_in_zone') }}** **Latitude: {{ user_lat }}, Longitude: {{ user_lng }}**
+                        </p>
                     </div>
                 </template>
                 <!-- Render service cards if service array is not empty -->
